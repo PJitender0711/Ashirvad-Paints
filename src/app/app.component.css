@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth; /* Enable smooth scrolling globally */
+}
+
+body {
+  overflow-y: auto; /* Ensure vertical scrolling */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+app-home, app-about, app-products, app-description, app-contact-us {
+  display: block;
+  min-height: 100vh; /* Ensure each section takes up the full viewport height */
+}
+
+/* Add this CSS to your existing styles */
+.fixed-navbar {
+  position: fixed; /* Fixes the navbar to the viewport */
+  width: 100%; /* Make it full width */
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: white; /* Set a background color */
+}
+
+/* For navbar 2, adjust top value according to the height of navbar 1 */
+.fixed-navbar-2 {
+  position: fixed; /* Fixes the navbar to the viewport */
+  width: 100%; /* Make it full width */
+  top: 80px; /* Adjust based on the height of navbar 1 */
+  z-index: 999; /* Ensure it appears above other elements */
+  background-color: #f9f9f9; /* Example background color */
+}
+/* Hide scrollbar for all elements */
+
+
+/* Hide scrollbar on a specific element */
+.App {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100vh; /* Full height of the viewport */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.App::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+  
