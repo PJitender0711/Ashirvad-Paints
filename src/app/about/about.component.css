@@ -1,0 +1,5 @@
+/* Add padding to offset the height of the fixed navbar */
+[id] {
+    scroll-margin-top: 6rem; /* Adjust this value to match your navbar height */
+  }
+  

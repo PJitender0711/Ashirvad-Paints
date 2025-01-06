@@ -17,7 +17,6 @@
           >
         </div>
       </div>
-
       <div class="h-20 w-72 flex flex-row">
         <div class="flex items-center mx-5 h-full w-8">
           <img src="../assets/mail.png" alt="">
@@ -51,20 +50,21 @@
   <div class="w-full h-20 flex pt-6 justify-end bg-custom-bg fixed-navbar-2">
     <ul class="flex space-x-16 list-none p-0 mx-10 items-center">
       <li class="text-gray-400 hover:text-black font-bold text-lg cursor-pointer">
-        <a  (click)="goToPart('home')">Home</a>
+        <a (click)="scrollTo('home')">Home</a>
       </li>
       <li class="text-gray-400 hover:text-black font-bold text-lg cursor-pointer">
-        <a  (click)="goToPart('about')">About</a>
+        <a (click)="scrollTo('about')">About</a>
       </li>
       <li class="text-gray-400 hover:text-black font-bold text-lg cursor-pointer">
-        <a  (click)="goToPart('products')">Products</a>
+        <a (click)="scrollTo('products')">Products</a>
       </li>
       <li class="text-gray-400 hover:text-black font-bold text-lg cursor-pointer">
-        <a  (click)="goToPart('description')">Description</a>
+        <a (click)="scrollTo('description')">Description</a>
       </li>
       <li class="text-gray-400 hover:text-black font-bold text-lg cursor-pointer">
-        <a  (click)="goToPart('contact')">Contact</a>
+        <a (click)="scrollTo('contact')">Contact</a>
       </li>
+      
     </ul>
   </div>
   

@@ -9,7 +9,13 @@ import { ViewportScroller } from '@angular/common';
 })
 export class AppComponent {
   constructor(private router: Router) {
-   
+    
+  }
+  scrollTo(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 goToPart(fragment : any){
   this.router.navigateByUrl('' + fragment);

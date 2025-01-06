@@ -44,4 +44,12 @@ app-home, app-about, app-products, app-description, app-contact-us {
 .App::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
-  
+  /* Add padding to offset fixed navbar height */
+:root {
+  --fixed-navbar-height: 5rem; /* Adjust this value to match your navbar height */
+}
+
+[id] {
+  scroll-margin-top: var(--fixed-navbar-height);
+}
+
