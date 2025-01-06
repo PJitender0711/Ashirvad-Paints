@@ -53,3 +53,9 @@ app-home, app-about, app-products, app-description, app-contact-us {
   scroll-margin-top: var(--fixed-navbar-height);
 }
 
+/* Example active class styling */
+.active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
